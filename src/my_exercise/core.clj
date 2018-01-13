@@ -3,10 +3,11 @@
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [ring.middleware.reload :refer [wrap-reload]]
-            [my-exercise.home :as home]))
+            [clj-http.client :as client]
+            [my-exercise.controllers.elections :as controller]))
 
 (defroutes app
-  (GET "/" [] home/page)
+  controller/app-routes
   (route/resources "/")
   (route/not-found "Not found"))
 

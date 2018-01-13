@@ -1,4 +1,4 @@
-(ns my-exercise.us-state)
+(ns my-exercise.models.us-state)
 
 (def postal-abbreviations
   ["AL"
