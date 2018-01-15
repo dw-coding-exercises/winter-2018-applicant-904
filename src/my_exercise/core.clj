@@ -4,7 +4,7 @@
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [ring.middleware.reload :refer [wrap-reload]]
             [clj-http.client :as client]
-            [my-exercise.controllers.elections :as controller]))
+            [my_exercise.controllers.elections :as controller]))
 
 (defroutes app
   controller/app-routes

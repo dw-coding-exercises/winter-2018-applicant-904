@@ -1,7 +1,7 @@
-(ns my-exercise.views.home
+(ns my_exercise.views.home
   (:require [hiccup.page :refer [html5]]
             [ring.util.anti-forgery :refer [anti-forgery-field]]
-            [my-exercise.models.us-state :as us-state]))
+            [my_exercise.models.us-state :as us-state]))
 
 (defn header [_]
   [:head
