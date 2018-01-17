@@ -13,7 +13,9 @@
    [:link {:rel "stylesheet" :href "default.css"}]])
 
 (defn display-elections []
-  ; below included as sample text to validate page is rendering correctly
+  ; below included as sample text to validate page is rendering correctly -
+  ; would be replaced with a function mapping through election results to build
+  ; html elements for page
   [:div {:class "elections"}
     [:ul "Elections"
       [:li "Election 1"]
