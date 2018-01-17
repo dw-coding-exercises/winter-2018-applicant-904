@@ -99,7 +99,9 @@
 (defn address-form [_]
   [:div {:class "address-form"}
    [:h1 "Find my next election"]
-   [:form {:action "/search" :method "post"}
+   [:form {:action "/search"
+           :city "city"
+           :state "state"}
     (anti-forgery-field)
     [:p "Enter the address where you are registered to vote"]
     [:div
