@@ -8,7 +8,7 @@
 
 (defroutes app
   controller/app-routes
-  ; (route/resources "/" "/search")
+  (route/resources "/")
   (route/not-found "Not found"))
 
 (def handler

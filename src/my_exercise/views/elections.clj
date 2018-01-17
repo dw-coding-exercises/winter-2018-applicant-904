@@ -1,6 +1,7 @@
 (ns my_exercise.views.elections
   (:require [hiccup.page :refer [html5]]
             [ring.util.anti-forgery :refer [anti-forgery-field]]
+            ; below included to render view with elections data when ready
             [my_exercise.models.elections :as elections]))
 
 (defn header []
@@ -12,6 +13,7 @@
    [:link {:rel "stylesheet" :href "default.css"}]])
 
 (defn display-elections []
+  ; below included as sample text to validate page is rendering correctly
   [:div {:class "elections"}
     [:ul "Elections"
       [:li "Election 1"]
